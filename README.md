@@ -14,7 +14,7 @@ This project is a PoC developped during the [QRL Winter Hackathon 2021](https://
 
 3) Open a terminal and download the installation script. Make the script executable.
 
-	    $ wget https://github.com/0xFF0/QRL_rpi/blob/main/Install_qrl_node_pi.sh
+	    $ wget https://raw.githubusercontent.com/0xFF0/QRL_rpi/main/Install_qrl_node_pi.sh
 	    $ chmod +x Install_qrl_node_pi.sh
 	
 4) Run the script (it takes approximatively 2 hours to setup everything).
