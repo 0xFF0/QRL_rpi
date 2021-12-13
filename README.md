@@ -1,4 +1,4 @@
-# Running a QRL node on a Raspberry Pi 4
+# Running a QRL node on a Raspberry Pi
 
 Running a [QRL](https://www.theqrl.org/) node strengthens the network, supports the decentralization and further verifies transactions on the network. 
 
@@ -25,3 +25,15 @@ This project is a PoC developped during the [QRL Winter Hackathon 2021](https://
 5) When you’re done, you can start the QRL node. 
 
 	    $ start_qrl
+
+## Models tested
+This command was used to identify the pi model number: `cat /proc/cpuinfo | grep 'Revision' | awk '{print $3}'`.
+
+Raspberry Pi tested are: 
+
+| Revision      | Model         | RAM       | Results   |
+| ------------- | ------------- | --------- | --------- |
+| a21041        | 2 Model B     | 1 GB      | Works     |
+| c03111        | 4 Model B     | 4 GB      | Works     |
+| c03112        | 4 Model B     | 4 GB      | Works     |
+
