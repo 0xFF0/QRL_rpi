@@ -12,8 +12,12 @@ pip3 install -U setuptools
 
 
 # Qrandomx for pi4
-git clone --recurse https://github.com/theQRL/qrandomx.git
+git clone https://github.com/theQRL/qrandomx.git
+git clone https://github.com/tevador/RandomX.git
+mkdir qrandomx/deps/RandomX
+cp -r RandomX/* qrandomx/deps/RandomX
 cd qrandomx
+sed -i 's/randomx_create_vm(flags | RANDOMX_FLAG_LARGE_PAGES/randomx_create_vm(flags/g' src/qrandomx/rx-slow-hash.c 
 sed -i 's/ -msse2 -maes//g' CMakeLists.txt
 sudo python3 setup.py install
 cd ..
@@ -101,7 +105,7 @@ protected:
 #endif //QRYPTONIGHT_QRYPTONIGHT_H
 EOF
 cd ../..
-sudo python setup.py install
+sudo python3 setup.py install
 cd ..
 
 # Install QRL
@@ -110,5 +114,5 @@ cd QRL
 sed -i 's/pyqryptonight/#pyqryptonight/g' setup.cfg
 sed -i 's/pyqrandomx/#pyqrandomx/g' setup.cfg
 sudo pip3 install service_identity
-sudo python setup.py install
+sudo python3 setup.py install
 
