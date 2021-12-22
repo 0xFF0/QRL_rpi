@@ -36,4 +36,6 @@ Raspberry Pi tested are:
 | a21041        | 2 Model B     | 1 GB      | Works     |
 | c03111        | 4 Model B     | 4 GB      | Works     |
 | c03112        | 4 Model B     | 4 GB      | Works     |
+| a02082        | 3 Model B     | 1 GB      | Works     |
+| 9000c1        | Zero W        | 512 MB    | Works     |
 
